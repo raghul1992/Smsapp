@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <twilightsoftwares.com.smsapptest.views.TextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:textColor="@android:color/black"
+        />
+    <twilightsoftwares.com.smsapptest.views.TextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:id="@+id/tv_message"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxLines="3"
+        />
+    <twilightsoftwares.com.smsapptest.views.TextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View more"
+        android:id="@+id/tv_more"
+        android:visibility="gone"
+        android:layout_below="@+id/tv_message"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#cc0623"
+        />
+
+</RelativeLayout>

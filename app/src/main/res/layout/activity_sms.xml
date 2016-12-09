@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_textbuttons"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/_5sdp">
+    <twilightsoftwares.com.smsapptest.views.TextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_backup"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_12sdp"
+        android:text="Tap for backup"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/_10sdp"
+        />
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="match_parent"
+
+            />
+    <twilightsoftwares.com.smsapptest.views.TextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:singleLine="true"
+        android:id="@+id/tv_sms_type"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_12sdp"
+        android:text="Tap to change view"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/_10sdp"
+        />
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="match_parent"
+
+            />
+        <twilightsoftwares.com.smsapptest.views.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:singleLine="true"
+            android:id="@+id/tv_sms_notification"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_15sdp"
+            android:text="1"
+            android:maxLength="1"
+            android:textColor="@android:color/white"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:layout_below="@+id/linear_textbuttons"
+        android:id="@+id/et_search"
+
+        />
+    <ListView
+        android:id="@+id/lv_sms_group"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/lay"
+        android:dividerHeight="@dimen/_1sdp"
+        android:layout_below="@+id/et_search"
+        android:layout_marginBottom="5px"
+        android:divider="@color/colorPrimaryDark"
+        android:transcriptMode="alwaysScroll" />
+
+
+    <ListView
+        android:id="@+id/lv_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/lay"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="@dimen/_1sdp"
+        android:layout_below="@+id/et_search"
+        android:layout_marginBottom="5px"
+        android:transcriptMode="alwaysScroll" />
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:id="@+id/btnSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <twilightsoftwares.com.smsapptest.views.EditViewLight
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:hint="@string/edittext_hint"
+            android:layout_toLeftOf="@+id/btnSendMessage"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
