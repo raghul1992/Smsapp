@@ -1,0 +1,5 @@
+Sms_app_sample_android
+send sms see list of all sms backup sms to google drive search through the sms list
+
+List of all libraries used:
+1.Google play services-drive 2.Butterknife 3.intuit-sdp
